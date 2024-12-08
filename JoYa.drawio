@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" version="25.0.1">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1235" dy="678" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1050" dy="576" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -72,8 +72,8 @@
         <mxCell id="Fip6EHuUExezOX5HmtJM-21" value="&lt;div&gt;TransitionTypes :&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="20" y="610" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Fip6EHuUExezOX5HmtJM-22" value="locomotionFSM.AddTranstion(new Transition&amp;lt;Locomotion&amp;gt;(FROM,TO,CONDITION &lt;font color=&quot;#99ccff&quot;&gt;(lambda expression)&lt;/font&gt;);" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="20" y="640" width="460" height="30" as="geometry" />
+        <mxCell id="Fip6EHuUExezOX5HmtJM-22" value="&lt;div&gt;locomotionFSM.AddTranstion(new Transition&amp;lt;Locomotion&amp;gt;(FROM,TO,CONDITION &lt;font color=&quot;#99ccff&quot;&gt;(lambda expression)&lt;/font&gt;);&lt;/div&gt;&lt;div&gt;OR locomotionFSM.AddTransition(Locomotion.RUN, Locomotion.JUMP, t =&amp;gt; PlayerInputManager.Instance.IsJumpPressed);&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="20" y="640" width="680" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Fip6EHuUExezOX5HmtJM-23" value="&lt;div&gt;locomotionFSM.AddTriggerTransition(Events.ON_JUMP, new Transition&amp;lt;Locomotion&amp;gt;(Locomotion.RUN, Locomotion.JUMP));&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#97d077&quot;&gt;To Trigger it call : &lt;/font&gt;locomotionFSM.Trigger(Events.ON_JUMP);&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="19" y="670" width="680" height="80" as="geometry" />
@@ -86,6 +86,9 @@
         </mxCell>
         <mxCell id="Fip6EHuUExezOX5HmtJM-31" value="locomotionFSM.AddTriggerTransitionFromAny(Events.ON_JUMP, new Transition&lt;Locomotion&gt;(Locomotion.JUMP, Locomotion.RUN, t =&gt; PlayerInputManager.Instance.IsJumpPressed));&#xa;To Trigger it call : locomotionFSM.Trigger(Events.ON_JUMP);" style="text;whiteSpace=wrap;fontColor=#33001A;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="19" y="800" width="1041" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Fip6EHuUExezOX5HmtJM-32" value="locomotionFSM.AddTwoWayTransition(new Transition&lt;Locomotion&gt;(Locomotion.RUN, Locomotion.JUMP,t =&gt; PlayerInputManager.Instance.IsJumpPressed));" style="text;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="19" y="850" width="841" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
