@@ -90,6 +90,9 @@
         <mxCell id="Fip6EHuUExezOX5HmtJM-32" value="locomotionFSM.AddTwoWayTransition(new Transition&lt;Locomotion&gt;(Locomotion.RUN, Locomotion.JUMP,t =&gt; PlayerInputManager.Instance.IsJumpPressed));" style="text;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="19" y="850" width="841" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="Fip6EHuUExezOX5HmtJM-33" value="&lt;pre&gt;&lt;span class=&quot;pl-s1&quot;&gt;Called after Fsm.Init() =&amp;gt; locomotionFSM&lt;/span&gt;&lt;span class=&quot;pl-kos&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;pl-en&quot;&gt;RequestStateChange&lt;/span&gt;&lt;span class=&quot;pl-kos&quot;&gt;(&lt;/span&gt;Locomotion.RUN&lt;span class=&quot;pl-kos&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;pl-kos&quot;&gt;;&lt;/span&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="10" y="930" width="230" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
